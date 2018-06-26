@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edittext1"
+        android:hint="Enter 1st number"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edittext2"
+        android:hint="Enter 2nd number"
+        android:layout_toRightOf="@id/edittext1"
+        android:layout_marginStart="29dp"
+        android:inputType="numberDecimal"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview"
+        android:layout_below="@id/edittext1"
+        android:layout_toRightOf="@id/edittext1"
+        android:text="Result"
+        android:textSize="30dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addbutton"
+        android:text="+"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginBottom="300dp"
+        android:layout_marginStart="29dp"
+        android:onClick="calculate"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/subtractbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/addbutton"
+        android:layout_marginBottom="300dp"
+
+        android:text="-"
+        android:onClick="calculate"/>
+
+    <Button
+        android:id="@+id/multiplybutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginBottom="166dp"
+        android:layout_marginStart="29dp"
+        android:text="*"
+        android:onClick="calculate"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/divbutton"
+        android:layout_toRightOf="@id/multiplybutton"
+        android:layout_marginBottom="166dp"
+        android:layout_alignParentBottom="true"
+        android:text="/"
+        android:onClick="calculate"/>
+
+    <Button
+        android:id="@+id/equalsbutton"
+        android:layout_width="100dp"
+        android:layout_height="185dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="31dp"
+        android:onClick="calculate"
+        android:text="=" />
+
+
+
+
+</RelativeLayout>
